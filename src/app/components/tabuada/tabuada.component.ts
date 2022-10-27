@@ -13,4 +13,6 @@ export class TabuadaComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  
 }
