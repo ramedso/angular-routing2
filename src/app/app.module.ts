@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomeComponent } from './components/home/home.component';
 import { TabuadaComponent } from './components/tabuada/tabuada.component';
+import { TimerComponent } from './components/timer/timer.component';
+import { routing } from '../angular.routing';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, routing],
   declarations: [AppComponent, HelloComponent],
-  bootstrap: [AppComponent, HomeComponent, TabuadaComponent],
+  bootstrap: [AppComponent, HomeComponent, TabuadaComponent, TimerComponent],
 })
 export class AppModule {}
