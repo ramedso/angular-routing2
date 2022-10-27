@@ -8,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TabuadaComponent implements OnInit {
   @Input() n1: string;
 
-  numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
   constructor() {}
 
   ngOnInit() {}
 
-  
+  tabuada() {
+    let div: HTMLElement = document.getElementById('container');
+    for (var i = 0; i < 11; i++) {
+      let resultado = this.n1 + ' x ' + ' = ' + Number(this.n1) * i;
+      div.innerHTML += resultado;
+    }
+  }
 }
